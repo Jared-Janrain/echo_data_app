@@ -1,5 +1,7 @@
 <h3> Parameters </h3>
-<%= @data %>
+<% @data.each do |key, value| %>
+  <p><%= "#{key} : #{value}" %></p>
+<% end %>
 
 <h3> Data from file sent </h3>
 

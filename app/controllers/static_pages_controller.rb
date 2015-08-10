@@ -17,7 +17,8 @@ class StaticPagesController < ApplicationController
 
       end
     end
-
+    logger.debug "DATA: #{@data}"
+    logger.debug "FILE DATA: #{@file_hash}"
     render 'show_data'
   end
 
